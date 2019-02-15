@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		5735D808221645B800613589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735D807221645B800613589 /* AppDelegate.swift */; };
-		5735D80A221645B800613589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735D809221645B800613589 /* ViewController.swift */; };
 		5735D80D221645B800613589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5735D80B221645B800613589 /* Main.storyboard */; };
 		5735D80F221645B900613589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5735D80E221645B900613589 /* Assets.xcassets */; };
 		5735D812221645B900613589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5735D810221645B900613589 /* LaunchScreen.storyboard */; };
+		5735D81A2216472500613589 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735D8192216472500613589 /* HomeViewController.swift */; };
+		5735D81C2216477300613589 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735D81B2216477300613589 /* TransactionCell.swift */; };
+		57EDBB7C22164B1400F1242B /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDBB7B22164B1300F1242B /* GraphView.swift */; };
+		57EDBB7E22164B5D00F1242B /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDBB7D22164B5D00F1242B /* UIColor+Theme.swift */; };
+		57EDBB80221662AB00F1242B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDBB7F221662AB00F1242B /* CardView.swift */; };
+		57EDBB82221662E000F1242B /* CALayer+ShadowCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDBB81221662E000F1242B /* CALayer+ShadowCorner.swift */; };
+		6CA03B457EA2550A10FA1C93 /* Pods_HackathonVisa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22757884F6D778812A43650C /* Pods_HackathonVisa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B344FA2FCDC3CA1F622F760 /* Pods-HackathonVisa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonVisa.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonVisa/Pods-HackathonVisa.release.xcconfig"; sourceTree = "<group>"; };
+		22757884F6D778812A43650C /* Pods_HackathonVisa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonVisa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5735D804221645B800613589 /* HackathonVisa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonVisa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5735D807221645B800613589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5735D809221645B800613589 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5735D80C221645B800613589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5735D80E221645B900613589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5735D811221645B900613589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5735D813221645B900613589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5735D8192216472500613589 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5735D81B2216477300613589 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		57EDBB7B22164B1300F1242B /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		57EDBB7D22164B5D00F1242B /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		57EDBB7F221662AB00F1242B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		57EDBB81221662E000F1242B /* CALayer+ShadowCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+ShadowCorner.swift"; sourceTree = "<group>"; };
+		DAAA3059CF48475C289A4404 /* Pods-HackathonVisa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonVisa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonVisa/Pods-HackathonVisa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CA03B457EA2550A10FA1C93 /* Pods_HackathonVisa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB7AEF47B335890273C8C1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAAA3059CF48475C289A4404 /* Pods-HackathonVisa.debug.xcconfig */,
+				0B344FA2FCDC3CA1F622F760 /* Pods-HackathonVisa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5735D7FB221645B800613589 = {
 			isa = PBXGroup;
 			children = (
 				5735D806221645B800613589 /* HackathonVisa */,
 				5735D805221645B800613589 /* Products */,
+				1AB7AEF47B335890273C8C1D /* Pods */,
+				FD278F17D6017D8712EA05CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,27 @@
 		5735D806221645B800613589 /* HackathonVisa */ = {
 			isa = PBXGroup;
 			children = (
+				5735D8192216472500613589 /* HomeViewController.swift */,
+				5735D81B2216477300613589 /* TransactionCell.swift */,
 				5735D807221645B800613589 /* AppDelegate.swift */,
-				5735D809221645B800613589 /* ViewController.swift */,
+				57EDBB7B22164B1300F1242B /* GraphView.swift */,
+				57EDBB7D22164B5D00F1242B /* UIColor+Theme.swift */,
 				5735D80B221645B800613589 /* Main.storyboard */,
 				5735D80E221645B900613589 /* Assets.xcassets */,
 				5735D810221645B900613589 /* LaunchScreen.storyboard */,
 				5735D813221645B900613589 /* Info.plist */,
+				57EDBB81221662E000F1242B /* CALayer+ShadowCorner.swift */,
+				57EDBB7F221662AB00F1242B /* CardView.swift */,
 			);
 			path = HackathonVisa;
+			sourceTree = "<group>";
+		};
+		FD278F17D6017D8712EA05CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22757884F6D778812A43650C /* Pods_HackathonVisa.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5735D816221645B900613589 /* Build configuration list for PBXNativeTarget "HackathonVisa" */;
 			buildPhases = (
+				E833ED6CE59B737529AD6D96 /* [CP] Check Pods Manifest.lock */,
 				5735D800221645B800613589 /* Sources */,
 				5735D801221645B800613589 /* Frameworks */,
 				5735D802221645B800613589 /* Resources */,
+				F21DE904F697046185BF64E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +171,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E833ED6CE59B737529AD6D96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackathonVisa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F21DE904F697046185BF64E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HackathonVisa/Pods-HackathonVisa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackathonVisa/Pods-HackathonVisa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5735D800221645B800613589 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5735D80A221645B800613589 /* ViewController.swift in Sources */,
+				57EDBB7E22164B5D00F1242B /* UIColor+Theme.swift in Sources */,
 				5735D808221645B800613589 /* AppDelegate.swift in Sources */,
+				5735D81A2216472500613589 /* HomeViewController.swift in Sources */,
+				5735D81C2216477300613589 /* TransactionCell.swift in Sources */,
+				57EDBB82221662E000F1242B /* CALayer+ShadowCorner.swift in Sources */,
+				57EDBB80221662AB00F1242B /* CardView.swift in Sources */,
+				57EDBB7C22164B1400F1242B /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +365,7 @@
 		};
 		5735D817221645B900613589 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAAA3059CF48475C289A4404 /* Pods-HackathonVisa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +384,7 @@
 		};
 		5735D818221645B900613589 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B344FA2FCDC3CA1F622F760 /* Pods-HackathonVisa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
