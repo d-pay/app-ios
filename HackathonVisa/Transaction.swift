@@ -9,6 +9,7 @@
 import Foundation
 
 struct Debit: Codable {
+    var id = 0
     var name = ""
     var totalAmount = ""
     var daysLeft = ""

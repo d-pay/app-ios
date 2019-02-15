@@ -11,5 +11,5 @@ import Foundation
 struct User: Codable {
     
     var balance = "00,00"
-    let debits = [Debit]()
+    var debits = [Debit]()
 }

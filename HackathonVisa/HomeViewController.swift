@@ -118,7 +118,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         cell.createdLabel.text = debit.submitTimeUtc
         cell.priceLabel.text = "R$\(debit.totalAmount)"
         cell.daysLeftLabel.text = "\(daysLeft) dias restantes"
-        cell.brandImageView.image = UIImage(named: "brand-\(indexPath.row+1)")
+        cell.brandImageView.image = UIImage(named: "brand-\(debit.id)")
         cell.setProgress(value: progress)
         return cell
     }
