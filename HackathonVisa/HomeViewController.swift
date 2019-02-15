@@ -13,12 +13,21 @@ class HomeViewController: UIViewController {
     @IBOutlet var balanceLabel: UILabel!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var cardView: UIView!
-    @IBOutlet var blurredView: UIVisualEffectView!
+    var blurredView: UIVisualEffectView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let visualEffect = UIBlurEffect(style: .light)
+        blurredView = UIVisualEffectView(effect: visualEffect)
+        blurredView.frame = view.frame
+    }
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         cardView.frame = CGRect(x: 0, y: view.frame.height, width: cardView.frame.width, height: cardView.frame.height)
+        view.addSubview(blurredView)
+        blurredView.isHidden = true
         view.addSubview(cardView)
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
             self.cardView.center.y -= 50
