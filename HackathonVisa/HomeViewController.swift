@@ -14,6 +14,8 @@ class HomeViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var cardView: UIView!
     var blurredView: UIVisualEffectView!
+    var user = User()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,11 @@ class HomeViewController: UIViewController {
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
             self.cardView.center.y -= 50
         }, completion: nil)
+        refresh() 
+    }
+    
+    @IBAction func balanceTapped(_ sender: UITapGestureRecognizer) {
+        refresh()
     }
     
     @IBAction func transferPressed(_ sender: Any) {
@@ -62,6 +69,20 @@ class HomeViewController: UIViewController {
         }
         
     }
+    
+    func refresh() {
+        APIClient.getInfo { (user) in
+            DispatchQueue.main.async {
+                self.user = user ?? User()
+                self.updateUI()
+            }
+        }
+    }
+    
+    func updateUI() {
+        balanceLabel.text = user.balance
+        tableView.reloadData()
+    }
 }
 
 
@@ -73,11 +94,15 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return user.debits.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "transactionCell") as! TransactionCell
+        let debit = user.debits[indexPath.row]
+        cell.nameLabel.text = debit.name
+//        cell.createdLabel.text = debit.dateAdded
+        cell.priceLabel.text = debit.totalAmount
         return cell
     }
         

@@ -99,6 +99,8 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="createdLabel" destination="ThQ-aK-CLS" id="vgV-FW-59X"/>
+                                            <outlet property="nameLabel" destination="D7J-nS-8vn" id="I8k-cj-gWU"/>
                                             <outlet property="priceLabel" destination="uX6-Ob-sx5" id="DoS-u8-Le8"/>
                                         </connections>
                                     </tableViewCell>
@@ -192,12 +194,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="35.000,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMx-QU-Qn8">
-                                <rect key="frame" x="42" y="41" width="255" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMx-QU-Qn8">
+                                <rect key="frame" x="42" y="41" width="282" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pt8-Pf-Iha" appends="YES" id="TT4-89-zw7"/>
+                                </connections>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star-icon" translatesAutoresizingMaskIntoConstraints="NO" id="hvC-tM-quB">
                                 <rect key="frame" x="369" y="41" width="25" height="25"/>
@@ -311,6 +317,11 @@
                         <action selector="cardDragged:" destination="BYZ-38-t0r" id="VGp-7M-yEx"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="pt8-Pf-Iha">
+                    <connections>
+                        <action selector="balanceTapped:" destination="BYZ-38-t0r" id="86Z-5M-lJm"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="132.88043478260872"/>
         </scene>

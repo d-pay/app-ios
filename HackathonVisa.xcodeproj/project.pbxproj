@@ -13,6 +13,9 @@
 		5735D812221645B900613589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5735D810221645B900613589 /* LaunchScreen.storyboard */; };
 		5735D81A2216472500613589 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735D8192216472500613589 /* HomeViewController.swift */; };
 		5735D81C2216477300613589 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735D81B2216477300613589 /* TransactionCell.swift */; };
+		57D64463221677BD00F8438B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D64462221677BD00F8438B /* APIClient.swift */; };
+		57D64465221677F800F8438B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D64464221677F800F8438B /* User.swift */; };
+		57D644672216784800F8438B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D644662216784800F8438B /* Transaction.swift */; };
 		57EDBB7C22164B1400F1242B /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDBB7B22164B1300F1242B /* GraphView.swift */; };
 		57EDBB7E22164B5D00F1242B /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDBB7D22164B5D00F1242B /* UIColor+Theme.swift */; };
 		57EDBB80221662AB00F1242B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDBB7F221662AB00F1242B /* CardView.swift */; };
@@ -31,6 +34,9 @@
 		5735D813221645B900613589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5735D8192216472500613589 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5735D81B2216477300613589 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		57D64462221677BD00F8438B /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		57D64464221677F800F8438B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		57D644662216784800F8438B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		57EDBB7B22164B1300F1242B /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		57EDBB7D22164B5D00F1242B /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		57EDBB7F221662AB00F1242B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 		5735D806221645B800613589 /* HackathonVisa */ = {
 			isa = PBXGroup;
 			children = (
+				57D64462221677BD00F8438B /* APIClient.swift */,
 				5735D8192216472500613589 /* HomeViewController.swift */,
 				5735D81B2216477300613589 /* TransactionCell.swift */,
 				5735D807221645B800613589 /* AppDelegate.swift */,
@@ -91,6 +98,8 @@
 				5735D813221645B900613589 /* Info.plist */,
 				57EDBB81221662E000F1242B /* CALayer+ShadowCorner.swift */,
 				57EDBB7F221662AB00F1242B /* CardView.swift */,
+				57D64464221677F800F8438B /* User.swift */,
+				57D644662216784800F8438B /* Transaction.swift */,
 			);
 			path = HackathonVisa;
 			sourceTree = "<group>";
@@ -218,7 +227,10 @@
 				57EDBB7E22164B5D00F1242B /* UIColor+Theme.swift in Sources */,
 				5735D808221645B800613589 /* AppDelegate.swift in Sources */,
 				5735D81A2216472500613589 /* HomeViewController.swift in Sources */,
+				57D64463221677BD00F8438B /* APIClient.swift in Sources */,
+				57D644672216784800F8438B /* Transaction.swift in Sources */,
 				5735D81C2216477300613589 /* TransactionCell.swift in Sources */,
+				57D64465221677F800F8438B /* User.swift in Sources */,
 				57EDBB82221662E000F1242B /* CALayer+ShadowCorner.swift in Sources */,
 				57EDBB80221662AB00F1242B /* CardView.swift in Sources */,
 				57EDBB7C22164B1400F1242B /* GraphView.swift in Sources */,
