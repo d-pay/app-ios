@@ -24,7 +24,7 @@ class APIClient {
                 let decoder = JSONDecoder()
                 do {
                     
-                    let user = try decoder.decode(User.self, from: jsonData)
+                    var user = try decoder.decode(User.self, from: jsonData)
                     completion(user)
                 } catch {
                     completion(nil)

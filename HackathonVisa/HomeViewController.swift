@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     @IBOutlet var balanceLabel: UILabel!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var cardView: UIView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet var currencyLabel: UILabel!
     var blurredView: UIVisualEffectView!
     var user = User()
     
@@ -23,6 +25,8 @@ class HomeViewController: UIViewController {
         blurredView = UIVisualEffectView(effect: visualEffect)
         blurredView.frame = view.frame
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 80, right: 0);
+        activityIndicator.isHidden = true
+        currencyLabel.isHidden = true
     }
     
     
@@ -38,7 +42,8 @@ class HomeViewController: UIViewController {
         refresh() 
     }
     
-    @IBAction func balanceTapped(_ sender: UITapGestureRecognizer) {
+    @IBAction func balanceTapped(_ sender: UIButton) {
+        activityIndicator.center.x = 250
         refresh()
     }
     
@@ -72,6 +77,8 @@ class HomeViewController: UIViewController {
     }
     
     func refresh() {
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
         APIClient.getInfo { (user) in
             DispatchQueue.main.async {
                 self.user = user ?? User()
@@ -81,7 +88,10 @@ class HomeViewController: UIViewController {
     }
     
     func updateUI() {
+        self.activityIndicator.stopAnimating()
+        self.activityIndicator.isHidden = true
         balanceLabel.text = user.balance
+        currencyLabel.isHidden = false
         tableView.reloadData()
     }
 }
@@ -101,16 +111,20 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "transactionCell") as! TransactionCell
         let debit = user.debits[indexPath.row]
+        let daysLeft = Int.random(in: 1...30)
+        let progress = 10 - Double(daysLeft) * 0.33
         cell.nameLabel.text = debit.name
+        
         cell.createdLabel.text = debit.submitTimeUtc
-        cell.priceLabel.text = debit.totalAmount
-        cell.daysLeftLabel.text = debit.daysLeft
+        cell.priceLabel.text = "R$\(debit.totalAmount)"
+        cell.daysLeftLabel.text = "\(daysLeft) dias restantes"
         cell.brandImageView.image = UIImage(named: "brand-\(indexPath.row+1)")
+        cell.setProgress(value: progress)
         return cell
     }
         
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 120
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

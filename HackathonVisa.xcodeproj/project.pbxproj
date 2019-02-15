@@ -13,6 +13,7 @@
 		5735D812221645B900613589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5735D810221645B900613589 /* LaunchScreen.storyboard */; };
 		5735D81A2216472500613589 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735D8192216472500613589 /* HomeViewController.swift */; };
 		5735D81C2216477300613589 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735D81B2216477300613589 /* TransactionCell.swift */; };
+		575ADE002216D78E0061FA65 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575ADDFF2216D78E0061FA65 /* ShadowView.swift */; };
 		57D64463221677BD00F8438B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D64462221677BD00F8438B /* APIClient.swift */; };
 		57D64465221677F800F8438B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D64464221677F800F8438B /* User.swift */; };
 		57D644672216784800F8438B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D644662216784800F8438B /* Transaction.swift */; };
@@ -34,6 +35,7 @@
 		5735D813221645B900613589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5735D8192216472500613589 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5735D81B2216477300613589 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		575ADDFF2216D78E0061FA65 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		57D64462221677BD00F8438B /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		57D64464221677F800F8438B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		57D644662216784800F8438B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				57EDBB7F221662AB00F1242B /* CardView.swift */,
 				57D64464221677F800F8438B /* User.swift */,
 				57D644662216784800F8438B /* Transaction.swift */,
+				575ADDFF2216D78E0061FA65 /* ShadowView.swift */,
 			);
 			path = HackathonVisa;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57EDBB7E22164B5D00F1242B /* UIColor+Theme.swift in Sources */,
+				575ADE002216D78E0061FA65 /* ShadowView.swift in Sources */,
 				5735D808221645B800613589 /* AppDelegate.swift in Sources */,
 				5735D81A2216472500613589 /* HomeViewController.swift in Sources */,
 				57D64463221677BD00F8438B /* APIClient.swift in Sources */,

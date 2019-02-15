@@ -15,6 +15,7 @@ class TransactionCell: UITableViewCell {
     @IBOutlet var createdLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
     @IBOutlet var daysLeftLabel: UILabel!
+    @IBOutlet var progressBarView: UIView!
     
     
     override func awakeFromNib() {
@@ -22,8 +23,7 @@ class TransactionCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    func setProgress(value: Double) {
+        progressBarView.frame = CGRect(x: progressBarView.frame.origin.x, y: progressBarView.frame.origin.y, width: CGFloat(37.4 * value), height: progressBarView.frame.height)
     }
-
 }
