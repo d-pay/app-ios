@@ -9,9 +9,8 @@
 import Foundation
 
 struct Debit: Codable {
-    var imageID = Int.random(in: 0...2)
     var name = ""
     var totalAmount = ""
     var daysLeft = ""
-    var submitTimeUTC = ""
+    var submitTimeUtc = ""
 }

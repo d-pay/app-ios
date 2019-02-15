@@ -28,6 +28,11 @@
                                 <rect key="frame" x="0.0" y="409" width="414" height="327"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="kfa-M8-InO">
+                                    <rect key="frame" x="0.0" y="172" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="headerCell" id="BMd-4E-fPp">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
@@ -61,7 +66,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nike-image" translatesAutoresizingMaskIntoConstraints="NO" id="du7-42-tYW">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="du7-42-tYW">
                                                     <rect key="frame" x="20" y="24" width="70" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <userDefinedRuntimeAttributes>
@@ -78,7 +83,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35p-le-WIe">
-                                                    <rect key="frame" x="340" y="48" width="30" height="30"/>
+                                                    <rect key="frame" x="364" y="47" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" image="money-icon"/>
                                                 </button>
@@ -89,8 +94,8 @@
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13 dias restantes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avS-Cj-4We">
-                                                    <rect key="frame" x="155" y="63" width="105" height="26"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13 dias restantes" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avS-Cj-4We">
+                                                    <rect key="frame" x="98" y="66" width="105" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -99,7 +104,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="brandImageView" destination="du7-42-tYW" id="oAa-sI-9MZ"/>
                                             <outlet property="createdLabel" destination="ThQ-aK-CLS" id="vgV-FW-59X"/>
+                                            <outlet property="daysLeftLabel" destination="avS-Cj-4We" id="5X4-kO-XZp"/>
                                             <outlet property="nameLabel" destination="D7J-nS-8vn" id="I8k-cj-gWU"/>
                                             <outlet property="priceLabel" destination="uX6-Ob-sx5" id="DoS-u8-Le8"/>
                                         </connections>
@@ -331,7 +338,6 @@
         <image name="card-background-image" width="1280" height="1024"/>
         <image name="deposit-icon" width="180" height="180"/>
         <image name="money-icon" width="180" height="180"/>
-        <image name="nike-image" width="1200" height="900"/>
         <image name="request-icon" width="180" height="180"/>
         <image name="star-icon" width="180" height="180"/>
         <image name="transfer-icon" width="180" height="180"/>

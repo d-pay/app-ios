@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
         let visualEffect = UIBlurEffect(style: .light)
         blurredView = UIVisualEffectView(effect: visualEffect)
         blurredView.frame = view.frame
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 80, right: 0);
     }
     
     
@@ -101,8 +102,10 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "transactionCell") as! TransactionCell
         let debit = user.debits[indexPath.row]
         cell.nameLabel.text = debit.name
-//        cell.createdLabel.text = debit.dateAdded
+        cell.createdLabel.text = debit.submitTimeUtc
         cell.priceLabel.text = debit.totalAmount
+        cell.daysLeftLabel.text = debit.daysLeft
+        cell.brandImageView.image = UIImage(named: "brand-\(indexPath.row+1)")
         return cell
     }
         

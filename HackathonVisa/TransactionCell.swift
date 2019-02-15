@@ -14,6 +14,9 @@ class TransactionCell: UITableViewCell {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var createdLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
+    @IBOutlet var daysLeftLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
